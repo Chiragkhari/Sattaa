@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import logo from './test.png';
+import otherLogo from './logo.svg'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import VotingCounter from './components/VotingCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App logo={logo} />
+    <App logo={otherLogo} />
+    <App logo={logo} />
+    <App logo={otherLogo} /> */}
+    <VotingCounter/>
   </React.StrictMode>
 );
 
