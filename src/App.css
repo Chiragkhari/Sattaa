@@ -51,12 +51,22 @@
   font-size: small;
   color: darkgray;
 }
+.periodvalue{
+  position: relative;
+bottom: -6px;
+font-size: medium;
+top: -11px;
+left: 29px;
+font-weight: bold;
+color: black;
+}
 .count-down {
   position: relative;
   right: -237px;
-  bottom: 30px;
+  bottom: 53px;
   font-size: small;
   color: darkgray;
+
 }
 .btn-div{
   position: relative;
@@ -180,4 +190,26 @@
     gap: 11px;
     display: flex;
     flex-wrap: wrap;
+}
+.recordnumber{
+  font-size: small;
+  position: relative;
+  left: 4px;
+}
+.timer{
+  display: flex;
+  position: relative ;
+  top: 10px;
+}
+.timerspan{
+  position: relative;
+  top: -66px;
+  left: 251px;
+  width: 53px;
+}
+.resultdiv2{
+  height: 59px;
+    width: 34px;
+    position: relative;
+    top:60px
 }
