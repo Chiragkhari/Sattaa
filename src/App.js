@@ -25,6 +25,17 @@ function App() {
 
   useEffect(getDataFromAPI, []);
 
+  // setInterval(()=>{
+  //   setGameData({
+  //     ...gameData,
+  //     id: gameData.id+1,
+  //   });
+  //   // function getRndInteger(min, max) {
+  //   //   return Math.floor(Math.random() * (max - min + 1)) + min;
+  //   // }
+  //   // setTime(timer+10);
+  // }, 30000)
+
   function getDataFromAPI() {
     getGameData().then((data) => {
       setGameData(data);
@@ -77,6 +88,7 @@ function App() {
               strokeWidth={6}
               colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
               colorsTime={[7, 5, 2, 0]}
+              onComplete={getDataFromAPI}
             >
               {({ remainingTime }) => remainingTime}
             </CountdownCircleTimer>
@@ -93,16 +105,12 @@ function App() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
+        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Place Bid</h2>
+        {/* <div>Place Bid</div> */}
         <form>
           <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
         </form>
+        <button onClick={closeModal}>submit</button>
       </Modal>
           <Button className="btn2">Join Violet</Button>
           <Button variant="danger" className="btn3">
@@ -134,11 +142,29 @@ function App() {
         </div>
         <div className="resultdiv1">
           <div className="resultdiv2">
-            <span className="recordnumber">888</span>
+            <span className="recordnumber">8</span>
+            <ResultBox className1="div1" className2="div2green" />
+          </div>
+          <div className="resultdiv2">
+            <span className="recordnumber">7</span>
+            <ResultBox className1="div1" className2="div2" />
+          </div>
+
+           <div className="resultdiv2">
+            <span className="recordnumber">2</span>
+            <ResultBox className1="div1" className2="div2green" />
+          </div>
+          <div className="resultdiv2">
+            <span className="recordnumber">5</span>
+            <ResultBox className1="div1" className2="div2green" />
+          </div>
+
+           <div className="resultdiv2">
+            <span className="recordnumber">3</span>
             <ResultBox className1="div1" className2="div2" />
           </div>
           <div className="resultdiv2">
-            <span className="recordnumber">888</span>
+            <span className="recordnumber">1</span>
             <ResultBox className1="div1" className2="div2" />
           </div>
         </div>

@@ -164,7 +164,7 @@ color: black;
 .div1{
     height: 24px;
     width: 14px;
-    background: black;
+    background: purple;
     position: absolute;
     /* left: 523px; */
     border-radius: 27px;
@@ -175,6 +175,17 @@ color: black;
     height: 24px;
     width: 13px;
     background: red;
+    /* left: 534px; */
+    border-radius: -3px;
+    border-radius: 14px;
+    margin-left: 4px;
+   /* top: -23.1px; */
+}
+
+.div2green{
+    height: 24px;
+    width: 13px;
+    background: green;
     /* left: 534px; */
     border-radius: -3px;
     border-radius: 14px;
